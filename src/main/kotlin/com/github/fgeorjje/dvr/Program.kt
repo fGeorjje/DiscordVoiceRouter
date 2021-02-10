@@ -50,7 +50,7 @@ object Program {
         val audioRouter = AudioRouter()
 
         val jda = JDABuilder.createLight(token, EnumSet.of(GatewayIntent.GUILD_VOICE_STATES))
-            .setActivity(Activity.watching("github.com/fGeorjje/Discord-Audio-Router"))
+            .setActivity(Activity.watching("github.com/fGeorjje/DiscordVoiceRouter"))
             .setStatus(OnlineStatus.DO_NOT_DISTURB)
             .addEventListeners(ShutdownListener(audioRouter))
             .enableCache(CacheFlag.VOICE_STATE)
